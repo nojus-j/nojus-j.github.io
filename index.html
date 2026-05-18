@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -146,11 +147,10 @@
     section {
       margin-bottom: 50px;
     }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: var(--heading);
+on-intro {
+      color: var(--muted-text);
+      max-width: 780px;
+      margin: -8px 0 22px;
     }
 
     .about,
@@ -261,17 +261,20 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Nojus Jončas</h1>
-    <p>Software Systems student sharing programming, web development, algorithms, embedded systems, and machine learning projects.</p>
+    <p>Software Systems student sharing software projects, embedded systems work, 3D modeling, and 3D printing
+      experience.</p>
   </header>
 
   <nav>
     <div class="nav-content">
       <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#software">Software</a>
+        <a href="#modeling">3D Printing</a>
         <a href="#contact">Contact</a>
       </div>
       <button class="theme-toggle" id="themeToggle" type="button">Dark theme</button>
@@ -283,15 +286,18 @@
       <h2>About Me</h2>
       <div class="about">
         <p>
-          Hi! I'm Nojus, a Software Systems student interested in software development, web applications,
-          embedded systems, databases, modeling, and 3D printing. This page collects
-          my main projects in one place.
+          Hi! I'm Nojus, a Software Systems student interested in software development,
+          embedded systems, databases, 3D modeling, and 3D printing. This portfolio
+          showcases both my software projects and my hands-on modeling/printing work.
         </p>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <section id="software">
+      <h2>Software Projects</h2>
+      <p class="section-intro">
+        Programming, web development, embedded systems, and university projects collected in one place.
+      </p>
       <div class="projects-grid">
         <article class="project-card">
           <h3>AutoSekimas</h3>
@@ -320,8 +326,8 @@
         </article>
 
         <article class="project-card">
-          <h3>Empty Empty</h3>
-          <p>Nothing yet</p>
+          <h3>Arduino RPM Light</h3>
+          <p>An embedded project concept for a car RPM shift light using an Arduino and addressable LEDs.</p>
           <div class="tags">
             <span class="tag">Arduino</span>
             <span class="tag">C++</span>
@@ -329,6 +335,54 @@
           </div>
           <div class="project-links">
             <a href="https://github.com/nojus-j/Arduino-RPM-Light" target="_blank">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="modeling">
+      <h2>Modeling & 3D Printing</h2>
+      <p class="section-intro">
+        Hands-on design and printing experience, including functional parts, enclosures, prototypes, and CAD practice.
+      </p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Functional 3D Printed Parts</h3>
+          <p>
+            Practical printed parts designed to solve real problems, replace broken components, or improve everyday
+            objects.
+          </p>
+          <div class="tags">
+            <span class="tag">3D Printing</span>
+            <span class="tag">CAD</span>
+            <span class="tag">Functional Design</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Electronics Enclosures</h3>
+          <p>
+            Custom housings and protective cases for electronics projects such as sensors, controllers, Arduino boards,
+            and ESP32-based devices.
+          </p>
+          <div class="tags">
+            <span class="tag">Prototyping</span>
+            <span class="tag">Electronics</span>
+            <span class="tag">Enclosures</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>CAD & Modeling Practice</h3>
+          <p>
+            Models focused on improving design accuracy, tolerances, mechanical fit, printability, and clean part
+            geometry.
+          </p>
+          <div class="tags">
+            <span class="tag">Modeling</span>
+            <span class="tag">Design</span>
+            <span class="tag">PLA / PETG</span>
           </div>
         </article>
       </div>
@@ -375,4 +429,5 @@
     });
   </script>
 </body>
+
 </html>
